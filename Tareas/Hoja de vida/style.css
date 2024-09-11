@@ -69,3 +69,25 @@ img{
     border: 3px solid #0a0d0f;
     object-fit: cover;
 }
+
+/*Tabla de referencias*/
+table{
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+
+}
+
+table th, td{
+    border: 1px solid #ddd
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+
+}
+
+th{
+    background-color: #236cb6;
+    color: white;
+}
