@@ -1,0 +1,72 @@
+/*Fondo y alineado*/
+Body{
+    display: Flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    background: linear-gradient(130deg, skyblue,blue)
+
+}
+
+/*Letrado*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.2;
+}
+
+/*cuadro*/
+input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+form{
+    border: 1px solid rgb(116, 115, 115);
+    width: 400px;
+    height: 580px;
+    background-color: #fdfdfd;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0, 0.75);
+}
+
+form{
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    gap: px
+}
+
+/**/
+input{
+    background: rgba(255,255,255, 0.1);
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    color: rgb(12, 12, 12)
+
+}
+
+/*boton*/
+form .button{
+    background: rgb(45,126,231);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    
+}
+
+h2{
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    margin-bottom: 20px;
+}
