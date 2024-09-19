@@ -1,0 +1,38 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    Color: #e1dbdb;
+    line-height: 1.2;
+}
+
+/*Fondo y orientacion*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body{
+    padding: 20px;
+    max-width: 900px;
+    background: linear-gradient(130deg, green,blue);
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+*{
+    display: flex;
+    flex-direction:column;
+    gap: 16px;
+}
+
+div {
+    max-width: 900px;
+    width: 500px;
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 40px 0;
+    color: #000;
+}

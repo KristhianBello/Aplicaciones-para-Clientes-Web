@@ -106,20 +106,16 @@ form .button input:hover {
     .container {
         max-width: 100%;
     }
-
     form .group {
         width: 100%;
     }
-
     .container form {
         max-height: 400px;
         overflow-y: scroll;
     }
-
     .container form::-webkit-scrollbar {
         width: 0;
     }
-
     form .button {
         margin: 20px 0;
     }
