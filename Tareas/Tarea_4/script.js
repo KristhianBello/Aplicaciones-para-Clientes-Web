@@ -28,6 +28,13 @@ function calcular(operacion) {
           }
           resultado = num1 / num2;
           break;
+      case 'modulo':
+          if (num2 === 0) {
+              mostrarResultado("No se puede dividir por cero.");
+              return;
+          }
+          resultado = num1 % num2; // Operación de módulo
+          break;
       default:
           mostrarResultado("Operación no válida.");
           return;
