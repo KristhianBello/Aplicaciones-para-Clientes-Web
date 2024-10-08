@@ -49,7 +49,7 @@ function eliminarTutoria(index) {
     mostrarTutorias();
 }
 
-// Confirmar una tutoría (simulando la confirmación de un tutor)
+// Confirmar una tutoría
 function confirmarTutoria(index) {
     const tutoria = tutoriasSolicitadas[index];
     if (tutoria) {
@@ -81,7 +81,7 @@ if (logoutButton) {
 
 confirmarButton.addEventListener('click', () => {
     if (tutoriasSolicitadas.length > 0) {
-        confirmarTutoria(0); // Confirmar la primera tutoría como ejemplo
+        confirmarTutoria(0); // Confirma si hay tutorias aceptadas
     } else {
         alert('No hay tutorías para confirmar');
     }

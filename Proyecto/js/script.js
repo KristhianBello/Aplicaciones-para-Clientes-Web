@@ -1,14 +1,13 @@
-// Referencias a los formularios y campos
 const formLogin = document.getElementById('form-login');
 const formRegister = document.getElementById('form-register');
 const goToRegister = document.getElementById('go-to-register');
 const goToLogin = document.getElementById('go-to-login');
 const registerContainer = document.getElementById('register-container');
 
-// Simular un usuario registrado 
+// Ejemplo de un usuario registrado 
 const usuarioRegistrado = {
-    email: 'e1312105503@live.uleam.edu.ec', // Cambia esto por el correo real del usuario registrado
-    password: '12345678' // Cambia esto por la contraseña real del usuario registrado
+    email: 'e1312105503@live.uleam.edu.ec',
+    password: '12345678' 
 };
 
 // Alternar entre formularios
@@ -48,9 +47,8 @@ formLogin.addEventListener('submit', (e) => {
     // Validar las credenciales
     if (loginEmail === usuarioRegistrado.email && loginPassword === usuarioRegistrado.password) {
 
-        // Redirigir a la página de solicitar tutoría
-        window.location.href = 'html/student.html'; // Esto sigue igual
-
+        // Redirigir a la página
+        window.location.href = 'html/student.html';
     } else {
         alert('Correo o contraseña incorrectos.');
     }
