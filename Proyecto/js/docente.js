@@ -50,8 +50,8 @@ function reasignarTutoria(input, id) {
         cargarTutorias();
         guardarTutorias();
         alert(`Tutoría reasignada a: ${nuevaFechaHora}`);
-        input.style.display = 'none'; // Oculta el input después de reasignar
-        input.value = ''; // Limpia el input
+        input.style.display = 'none'; 
+        input.value = ''; 
     }
 }
 
@@ -70,6 +70,6 @@ cargarTutorias();
 
 // Función para cerrar sesión
 function cerrarSesion() {
-    // Aquí puedes agregar lógica adicional si es necesario (como limpiar datos de sesión)
-    window.location.href = "login.html"; // Redirige al usuario a la página de login
+    
+    window.location.href = "login.html"; 
 }

@@ -103,9 +103,9 @@ cargarEstadoTutorias();
 const logoutButton = document.getElementById('logout-button');
 if (logoutButton) {
     logoutButton.addEventListener('click', () => {
-        // Limpiar cualquier almacenamiento de sesión/localStorage
-        localStorage.removeItem('userSession');  // Si estás usando localStorage
-        sessionStorage.removeItem('userSession'); // Si estás usando sessionStorage
+        
+        localStorage.removeItem('userSession'); 
+        sessionStorage.removeItem('userSession');
 
         // Puedes eliminar cookies si las estás usando para la sesión
         document.cookie = "userSession=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
@@ -114,6 +114,6 @@ if (logoutButton) {
         console.log('Cierre de sesión registrado'); // Para verificar que se está ejecutando
 
         // Redirigir al login
-        window.location.href = '/Proyecto/html/login.html';  // Ajusta la ruta al login según tu estructura
+        window.location.href = '/Proyecto/html/login.html';
     });
 }

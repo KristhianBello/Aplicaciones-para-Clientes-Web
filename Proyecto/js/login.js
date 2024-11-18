@@ -75,10 +75,10 @@ formLogin.addEventListener('submit', (e) => {
 
     if (primeraLetra === 'p') {
         // Redirigir al menú del docente
-        window.location.href = "/Proyecto/html/teacher.html"; // Cambia a la ruta correcta
+        window.location.href = "/Proyecto/html/teacher.html";
     } else if (primeraLetra === 'e') {
         // Redirigir al menú del estudiante
-        window.location.href = "/Proyecto/html/student.html"; // Cambia a la ruta correcta
+        window.location.href = "/Proyecto/html/student.html"; 
     } else {
         // Mensaje de error si el correo no es válido
         alert('Correo no válido. Por favor, ingresa un correo que comience con "p" o "e".');
