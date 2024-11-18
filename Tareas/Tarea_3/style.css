@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.2;
+}
+
+/* Fondo y orientación */
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background: linear-gradient(130deg, skyblue, blue);
+}
+
+/* Cuadro de registro */
+.container {
+    max-width: 900px;
+    width: 500px;
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 40px 0;
+}
+
+/* Título */
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;   
+}
+
+/* Cuadro */
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+form span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+form .group {
+    width: 100%;
+}
+
+/* Cuadros de entrada */
+form .group input, 
+form .group select {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.5s ease;
+}
+
+/* Animación de enfoque */
+form .group input:focus, 
+form .group select:focus {
+    border-color: skyblue;
+}
+
+/* Botón */
+form .button {
+    width: 100%;
+    height: 40px;
+}
+
+form .button input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(130deg, blue, skyblue);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+form .button input:hover {
+    background: linear-gradient(130deg, skyblue, blue);
+    color: white;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media(max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+    form .group {
+        width: 100%;
+    }
+    .container form {
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar {
+        width: 0;
+    }
+    form .button {
+        margin: 20px 0;
+    }
+}
+
+/* Mensajes de alerta */
+small {
+    display: none;
+}
+
+was-validated small{
+    display:block;
+    color: red;
+}

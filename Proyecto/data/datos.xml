@@ -1,0 +1,17 @@
+<!-- tutorias.xml -->
+<tutorias>
+    <tutoria>
+        <id>1</id>
+        <estudiante>Juan Pérez</estudiante>
+        <fecha>2024-11-15</fecha>
+        <hora>10:00</hora>
+        <docente>Dr. García</docente>
+    </tutoria>
+    <tutoria>
+        <id>2</id>
+        <estudiante>Maria López</estudiante>
+        <fecha>2024-11-16</fecha>
+        <hora>12:00</hora>
+        <docente>Dra. Sánchez</docente>
+    </tutoria>
+</tutorias>

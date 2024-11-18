@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registro de Clientes</div>
+            <form id="validacion" novalidate>
+                <div class="group">
+                    <span>Cedula</span>
+                    <input type="number" placeholder="Cedula" autofocus required>
+                    <small>Debes ingresar una numero de cedula*</small>                
+                </div>
+                <div class="group">
+                    <span>Apellido</span>
+                    <input type="text" placeholder="Apellido" required>
+                    <small>Debes ingresar un apellido*</small>
+                </div>
+                <div class="group">
+                    <span>Nombre</span>
+                    <input type="text" placeholder="Nombre" required>
+                    <small>Debes ingresar un nombre*</small>
+                </div><div class="group">
+                    <span>Telefono</span>
+                    <input type="number" placeholder="Telefono">
+                    <small>Debes ingresar una numero de telefono*</small>
+                </div>
+                <div class="group">
+                    <span>Email</span>
+                    <input type="Email" placeholder="Correo Electronico" required>
+                    <small>Debes ingresar un correo*</small>
+                </div>                
+                    <div class="ciudad">
+                        <label for="ciudad">Ciudad
+                            <select name="Ciudad" id="city">
+                                <option value="Elegir">Elige:</option>
+                                <option value="Manta">Manta</option>
+                                <option value="Portoviejo">Portoviejo</option>
+                                <option value="El carmen">El Carmen</option>
+                                <option value="Chone">Chone</option>
+                                <option value="Calceta">Calceta</option>
+                                <option value="Alfaro">Alfaro</option>
+                                <option value="Jipijapa">Jipijapa</option>
+                                <option value="Jaramijo">Jaramijo</option>
+                            </select>
+                        </label>
+                    </div>      
+                    <div class="button">
+                        <input type="button" value="Registrar">
+                    </div>
+            </form>
+    </div>
+    <<script>
+        const addForm = document.getElementById("validacion");
+        addForm.addEventListener("submit", (e) => {
+            if (addForm.checkValidity() === false) {
+                e.preventDefault();
+                e.stopPropagation();
+                addForm.classList.add('was-validated');
+            }
+        });
+    </script>
+</body>
+</html>

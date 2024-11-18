@@ -1,0 +1,18 @@
+{
+    "estudiantes": [
+        {
+            "id": 1,
+            "nombre": "Pablo Zambrano",
+            "tutorias": [
+                { "fecha": "2024-11-15", "hora": "10:00", "docente": "Ing. García" }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Karen Intriago",
+            "tutorias": [
+                { "fecha": "2024-11-16", "hora": "12:00", "docente": "Ing. Sánchez" }
+            ]
+        }
+    ]
+}

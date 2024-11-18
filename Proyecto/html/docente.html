@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Docente</title>
+    <link rel="stylesheet" href="/Proyecto/css/docente.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido, Docente</h1>
+        <button id="logout-button" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </header>
+    <div class="container">
+        <h2>Solicitudes de Tutorías Pendientes</h2>
+        <table id="tutorias-table">
+            <thead>
+                <tr>
+                    <th>Estudiante</th>
+                    <th>Fecha Solicitada</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pablo</td>
+                    <td>2024-10-10</td>
+                    <td>Pendiente</td>
+                    <td>
+                        <button class="aceptar-button">Aceptar</button>
+                        <button class="rechazar-button">Rechazar</button>
+                        <button class="reasignar-button" onclick="toggleReasignarInput(this)">Reasignar</button>
+                        <input type="datetime-local" class="reasignar-input" style="display:none;" onchange="reasignarTutoria(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>María Gómez</td>
+                    <td>2024-10-12</td>
+                    <td>Pendiente</td>
+                    <td>
+                        <button class="aceptar-button">Aceptar</button>
+                        <button class="rechazar-button">Rechazar</button>
+                        <button class="reasignar-button" onclick="toggleReasignarInput(this)">Reasignar</button>
+                        <input type="datetime-local" class="reasignar-input" style="display:none;" onchange="reasignarTutoria(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pedro Ruiz</td>
+                    <td>2024-10-14</td>
+                    <td>Pendiente</td>
+                    <td>
+                        <button class="aceptar-button">Aceptar</button>
+                        <button class="rechazar-button">Rechazar</button>
+                        <button class="reasignar-button" onclick="toggleReasignarInput(this)">Reasignar</button>
+                        <input type="datetime-local" class="reasignar-input" style="display:none;" onchange="reasignarTutoria(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ana Martínez</td>
+                    <td>2024-10-15</td>
+                    <td>Pendiente</td>
+                    <td>
+                        <button class="aceptar-button">Aceptar</button>
+                        <button class="rechazar-button">Rechazar</button>
+                        <button class="reasignar-button" onclick="toggleReasignarInput(this)">Reasignar</button>
+                        <input type="datetime-local" class="reasignar-input" style="display:none;" onchange="reasignarTutoria(this)">
+                    </td>
+                </tr>
+                <!-- Aquí se cargarán las solicitudes de tutorías -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/Proyecto/js/teacher.js"></script>
+</body>
+</html>

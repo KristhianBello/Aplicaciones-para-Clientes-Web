@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Estudiante</title>
+    <link rel="stylesheet" href="/Proyecto/css/student.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido, Estudiante</h1>
+        <button id="logout-button">Cerrar Sesión</button>
+    </header>
+
+    <main>
+        <section id="solicitar-tutoria">
+            <h2>Solicitar Tutoría</h2>
+            <form id="form-solicitar-tutoria">
+                <label for="tema">Tema de la Tutoría:</label>
+                <input type="text" id="tema" name="tema" required>
+
+                <label for="fecha">Fecha de la Tutoría:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <button type="submit">Solicitar Tutoría</button>
+            </form>
+        </section>
+
+        <section id="lista-tutorias">
+            <h2>Tutorías Solicitadas</h2>
+            <ul id="tutorias-lista">
+                <!-- Aquí se mostrarán las tutorías solicitadas -->
+            </ul>
+        </section>
+
+        <section id="tutorias-confirmadas">
+            <h2>Tutorías Confirmadas</h2>
+            <ul id="confirmadas-lista">
+                <!-- Aquí se mostrarán las tutorías confirmadas -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="/Proyecto/js/student.js"></script>
+</body>
+</html>

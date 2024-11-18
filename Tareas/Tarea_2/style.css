@@ -1,0 +1,93 @@
+/*Tipografia*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*Fondo y bordes*/
+
+body{
+    background-color: #fdfdfd;
+}
+.selection{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px
+    rgba(0,0,0,0.1);
+    padding: 20px;
+}*/
+
+/*diseño de flexbox  o grid*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.selection{
+    display: flex;
+    justify-content:
+    space-between;
+    margin: 10px 0;
+}
+
+/*Color de encabezados*/
+h1, h2, h3{
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+/*Espaciado y margenes*/
+.selection{
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content{
+    margin-bottom: 11px;
+}
+
+/*Estilos para listas*/
+ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+li{
+    margin: 5px 0;
+}
+
+/*imagen (foto de Perfil)*/
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #0a0d0f;
+    object-fit: cover;
+}
+
+/*Tabla de referencias*/
+table{
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+
+}
+
+table th, td{
+    border: 1px solid #ddd
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+
+}
+
+th{
+    background-color: #236cb6;
+    color: white;
+}

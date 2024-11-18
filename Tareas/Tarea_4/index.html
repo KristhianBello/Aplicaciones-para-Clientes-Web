@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Resultados de las Operaciones</h1>
+    
+    <div>
+        <input type="number" id="num1" placeholder="Introduce el primer número">
+        <input type="number" id="num2" placeholder="Introduce el segundo número">
+        <h2>Selecciona una operación:</h2>
+        <button onclick="calcular('suma')">Suma</button>
+        <button onclick="calcular('resta')">Resta</button>
+        <button onclick="calcular('multiplicacion')">Multiplicación</button>
+        <button onclick="calcular('division')">División</button>
+        <button onclick="calcular('modulo')">Mod</button>
+    </div>
+    
+    <div id="resultado">
+        El resultado de la operación aparecerá aquí:
+    </div>
+</body>
+</html>

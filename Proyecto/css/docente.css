@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #28a745; /* Color de fondo para el header del docente */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative; /* Para el botón de cerrar sesión */
+}
+
+h1 {
+    margin: 0;
+}
+
+button#logout-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Para colocar el botón en la esquina */
+    right: 20px;
+    top: 20px;
+}
+
+button#logout-button:hover {
+    background-color: #c82333;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+td {
+    background-color: #e9ecef;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.aceptar-button {
+    background-color: #28a745; /* Verde para aceptar */
+    color: white;
+}
+
+button.aceptar-button:hover {
+    background-color: #218838;
+}
+
+button.rechazar-button {
+    background-color: #dc3545; /* Rojo para rechazar */
+    color: white;
+}
+
+button.rechazar-button:hover {
+    background-color: #c82333;
+}
+
+button.reasignar-button {
+    background-color: #ffc107; /* Amarillo para reasignar */
+    color: black;
+}
+
+button.reasignar-button:hover {
+    background-color: #e0a800;
+}

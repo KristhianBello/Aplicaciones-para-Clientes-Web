@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Tipo letrado*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #e1dbdb;
+    line-height: 1.2;
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(65, 70, 67);
+}
+
+/*Fondo y orientación*/
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(130deg, green, blue);
+    margin: 0;
+}
+
+/*Cuadro*/
+div {
+    max-width: 500px;
+    width: 200%;
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+}
+
+/*Cuadro de resultado*/
+#resultado{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0  2px 5px rgba(0,0,0, 0.2);
+}
+
+/*diseño de las operaciones*/
+input{
+    height: 29px;
+    padding: 5px;
+    width: 210px;
+    margin-bottom: 10px;
+    border-radius: 120px;
+    border: 1px solid #ccc;
+}
+
+/*Botones de las Operaciones*/
+button{
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #efe9e9;
+    color: rgb(0, 0, 0);
+    border: 1px solid #b1aeae;
+    border-radius: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: rgb(88, 85, 85);
+}
